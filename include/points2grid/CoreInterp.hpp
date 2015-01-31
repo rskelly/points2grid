@@ -57,7 +57,7 @@ public:
     virtual int init() = 0;
     virtual int update(double data_x, double data_y, double data_z) = 0;
     virtual int finish(const std::string& outputName, int outputFormat, unsigned int outputType) = 0;
-
+    virtual int finish(const std::string& outputName, int outputFormat, unsigned int outputType, double *adfGeoTransform, const char* wkt) = 0;
 protected:
     double GRID_DIST_X;
     double GRID_DIST_Y;

@@ -9,3 +9,4 @@ config.h
 *.dylib
 install_manifest.txt
 points2grid
+/build/
